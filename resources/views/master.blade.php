@@ -70,7 +70,7 @@
               <a class="nav-link" href="/">Beranda</a>
             </li>
             <li class="nav-item @@about">
-              <a class="nav-link" href="about.html">Profil</a>
+              <a class="nav-link" href="/profil">Profil</a>
             </li>
            
             <li class="nav-item dropdown view">

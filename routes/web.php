@@ -22,6 +22,7 @@ Route::get('/', function () {
 
 Route::get('/', 'WebController@home');
 Route::get('/home', 'WebController@home');
+Route::get('/profil', 'WebController@profil');
 Route::get('/ktp', 'WebController@ktp');
 Route::get('/listBlanko', 'WebController@listBlanko');
 

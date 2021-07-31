@@ -38,7 +38,7 @@
             <div class="d-flex align-items-center">
               <i class="ti-wallet text-primary icon-md mr-2"></i>
               <div class="text-left">
-                <h6 class="mb-0">Blanko Formulir Permohonan KK Baru WNI</h6>
+                <h6 class="mb-0">List Blanko</h6>
                 <a href="/listBlanko" class="mb-0">Klik Download..</a>
               </div>
             </div>
@@ -74,23 +74,7 @@
           </div>
         </div>
       </div>
-      <!-- teacher -->
-      <div class="col-12">
-        <h5 class="mb-3">File Pendukung</h5>
-        <div class="d-flex justify-content-between align-items-center flex-wrap">
-          <div class="media mb-2 mb-sm-0">
-            <img class="mr-4 img-fluid" src="{{ URL::asset('images/download.jpg') }}" alt="Teacher">
-            <div class="media-body">
-              <h4 class="mt-0">Blanko Surat Pengantar RT/RW</h4>
-              Klik Download..
-            </div>
-          </div>
-          <div class="social-link">
-          <a href="/listBlanko"  class="btn btn-primary">Download</a>
-          </div>
-        </div>
-        <div class="border-bottom border-primary mt-4"></div>
-      </div>
+     
     </div>
   </div>
 </section>
@@ -98,66 +82,7 @@
 
 
 
-<!-- related course -->
-<section class="section pt-0">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <h2 class="section-title">Persyaratan Terkait</h2>
-      </div>
-    </div>
-    <div class="row justify-content-center">
-      <!-- course item -->
 
-      <!-- course item -->
-      <div class="col-lg-4 col-sm-6 mb-5">
-    <div class="card p-0 border-primary rounded-0 hover-shadow">
-      <img class="card-img-top rounded-0" src="images/courses/course-3.jpg" alt="course thumb">
-      <div class="card-body">
-        
-        <a href="course-single.html">
-          <h6 class="card-title">PENGURUSAN AKTA KEMATIAN</h6>
-        </a>
-        
-        <a href="course-single.html" class="btn btn-primary btn-sm">Persyaratan</a>
-      </div>
-    </div>
-  </div>
-      <!-- course item -->
-     <div class="col-lg-4 col-sm-6 mb-5">
-    <div class="card p-0 border-primary rounded-0 hover-shadow">
-      <img class="card-img-top rounded-0" src="images/courses/course-4.jpg" alt="course thumb">
-      <div class="card-body">
-        
-        <a href="course-single.html">
-          <h4 class="card-title">PENGURUSAN NIKAH</h4>
-        </a>
-        
-        <a href="course-single.html" class="btn btn-primary btn-sm">Persyaratan</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- course item -->
-    <div class="col-lg-4 col-sm-6 mb-5">
-    <div class="card p-0 border-primary rounded-0 hover-shadow">
-      <img class="card-img-top rounded-0" src="images/courses/course-5.jpg" alt="course thumb">
-      <div class="card-body">
-        
-        <a href="course-single.html">
-          <h4 class="card-title">PERUBAHAN DATA DIRI</h4>
-        </a>
-        
-        <a href="course-single.html" class="btn btn-primary btn-sm">Apply now</a>
-      </div>
-    </div>
-  </div>
-
-
-    </div>
-  </div>
-</section>
-<!-- /related course -->
 
 
 

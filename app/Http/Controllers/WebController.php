@@ -66,6 +66,10 @@ class WebController extends Controller
     {
     	return view('ktp');
     }
+    public function profil()
+    {
+        return view('profil');
+    }
     public function syarat()
     {
         return view('syarat');
