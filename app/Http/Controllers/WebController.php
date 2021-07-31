@@ -15,6 +15,15 @@ class WebController extends Controller
     {
     	return view('ktp');
     }
+    public function syarat()
+    {
+        return view('syarat');
+    }
+
+public function syaratkk()
+    {
+        return view('syaratkk');
+    }
 
     public function contact()
     {
