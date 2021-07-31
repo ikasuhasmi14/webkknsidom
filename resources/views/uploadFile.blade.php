@@ -29,7 +29,7 @@
         
         <h2>Tambah Data</h2>
 
-        <form action="/simpanFile" method="POST">
+        <form action="/simpanGambar" method="POST">
         @csrf  
 
     <div class="mb-3">

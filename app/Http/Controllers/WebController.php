@@ -12,7 +12,7 @@ class WebController extends Controller
 {
     public function home()
     {
-        $layanan = DB::table('layanan')->get();
+        $layanan = DB::table('v_lay_image')->get();
     	return view('welcome',['layanan' => $layanan]);
     }
     public function listBlanko(){
@@ -43,7 +43,7 @@ class WebController extends Controller
     }
     public function simpanGambar(Request $request){
         
-	DB::table('syarat')->insert([
+	DB::table('layanan_image')->insert([
 		'id_layanan' => $request->id_layanan,
 		'nama_file' => $request->nama_file
 	]);

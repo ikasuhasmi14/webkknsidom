@@ -80,7 +80,7 @@
   @foreach($layanan as $l)
   <div class="col-lg-4 col-sm-6 mb-5">
     <div class="card p-0 border-primary rounded-0 hover-shadow">
-      <img class="card-img-top rounded-0" src="images/courses/course-1.jpg" alt="course thumb">
+      <img class="card-img-top rounded-0" src="{{ url('/file/images/'.$l->nama_file) }}" alt="course thumb">
       <div class="card-body">
       
         <a href="/detail/{{ $l->id_layanan }}">
