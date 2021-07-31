@@ -4,6 +4,9 @@
 @section ('title', 'Website Kelurahan')
 
 @section ('body')
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.4.3/css/ol.css" type="text/css">
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.4.3/build/ol.js"></script>
+
 <!-- page title -->
 <section class="page-title-section overlay" data-background="images/backgrounds/page-title.jpg">
   <div class="container">
@@ -47,10 +50,28 @@
 <!-- gmap -->
 <section class="section pt-0"> 
   <!-- Google Map -->
-  <div id="map_canvas" data-latitude="0.46432647070758" data-longitude="101.42768897709105"></div>
+  <div id="map" class="map"></div>
 </section>
 <!-- /gmap -->
-
+<script type="text/javascript">
+    // start
+    // untuk variabel penampung data JSON
+     
+      var map = new ol.Map({
+        target: 'map',
+        layers: [
+          new ol.layer.Tile({
+            source: new ol.source.OSM()
+          })  // pemanggilan variabel
+        ],
+        view: new ol.View({ 
+          center: ol.proj.fromLonLat([101.42881321821079, 0.4685982618018367]), // titik koordinat awal
+          zoom: 15 // zoom pada kamera
+        })
+         
+      });
+    </script>
+   
 
 <!-- jQuery -->
 <script src="plugins/jQuery/jquery.min.js"></script>

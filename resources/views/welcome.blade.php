@@ -66,10 +66,10 @@
     <div class="row">
       <div class="col-12">
         <div class="d-flex align-items-center section-title justify-content-between">
-          <h2 class="mb-0 text-nowrap mr-3">Layanan Keluraha Sidomulyo Timur</h2>
+          <h2 class="mb-0 text-nowrap mr-3">Layanan Kelurahan Sidomulyo Timur</h2>
           <div class="border-top w-100 border-primary d-none d-sm-block"></div>
           <div>
-            <a href="courses.html" class="btn btn-sm btn-primary-outline ml-sm-3 d-none d-sm-block">Lihat Semua</a>
+            <a href="/listBlanko" class="btn btn-sm btn-primary-outline ml-sm-3 d-none d-sm-block">Download Blanko</a>
           </div>
         </div>
       </div>
@@ -77,93 +77,21 @@
     <!-- course list -->
 <div class="row justify-content-center">
   <!-- course item -->
+  @foreach($layanan as $l)
   <div class="col-lg-4 col-sm-6 mb-5">
     <div class="card p-0 border-primary rounded-0 hover-shadow">
       <img class="card-img-top rounded-0" src="images/courses/course-1.jpg" alt="course thumb">
       <div class="card-body">
       
-        <a href="course-single.html">
-          <h5 class="card-title">SURAT PENGURUSAN KTP – el</h5>
+        <a href="/detail/{{ $l->id_layanan }}">
+          <h5 class="card-title">{{ $l->nama_layanan }}</h5>
         </a>
-        <a href="/syarat" class="btn btn-primary btn-sm">Persyaratan</a>
+        <a href="/detail/{{ $l->id_layanan }}" class="btn btn-primary btn-sm">Persyaratan</a>
       </div>
     </div>
   </div>
-  <!-- course item -->
-  <div class="col-lg-4 col-sm-6 mb-5">
-    <div class="card p-0 border-primary rounded-0 hover-shadow">
-      <img class="card-img-top rounded-0" src="images/courses/course-2.jpg" alt="course thumb">
-      <div class="card-body">
-        
-        <a href="course-single.html">
-          <h6 class="card-title">PENGURUSAN KARTU KELUARGA</h6>
-        </a>
-        
-        <a href="/syaratkk" class="btn btn-primary btn-sm">Persyaratan</a>
-      </div>
-    </div>
-  </div>
-  <!-- course item -->
-  <div class="col-lg-4 col-sm-6 mb-5">
-    <div class="card p-0 border-primary rounded-0 hover-shadow">
-      <img class="card-img-top rounded-0" src="images/courses/course-3.jpg" alt="course thumb">
-      <div class="card-body">
-        
-        <a href="course-single.html">
-          <h6 class="card-title">PENGURUSAN AKTA KEMATIAN</h6>
-        </a>
-        
-        <a href="course-single.html" class="btn btn-primary btn-sm">Persyaratan</a>
-      </div>
-    </div>
-  </div>
-  <!-- course item -->
-  <div class="col-lg-4 col-sm-6 mb-5">
-    <div class="card p-0 border-primary rounded-0 hover-shadow">
-      <img class="card-img-top rounded-0" src="images/courses/course-4.jpg" alt="course thumb">
-      <div class="card-body">
-        
-        <a href="course-single.html">
-          <h4 class="card-title">PENGURUSAN NIKAH</h4>
-        </a>
-        
-        <a href="course-single.html" class="btn btn-primary btn-sm">Persyaratan</a>
-      </div>
-    </div>
-  </div>
-  <!-- course item -->
-  <div class="col-lg-4 col-sm-6 mb-5">
-    <div class="card p-0 border-primary rounded-0 hover-shadow">
-      <img class="card-img-top rounded-0" src="images/courses/course-5.jpg" alt="course thumb">
-      <div class="card-body">
-        
-        <a href="course-single.html">
-          <h4 class="card-title">PERUBAHAN DATA DIRI</h4>
-        </a>
-        
-        <a href="course-single.html" class="btn btn-primary btn-sm">Apply now</a>
-      </div>
-    </div>
-  </div>
-  <!-- course item -->
-  <div class="col-lg-4 col-sm-6 mb-5">
-    <div class="card p-0 border-primary rounded-0 hover-shadow">
-      <img class="card-img-top rounded-0" src="images/courses/course-6.jpg" alt="course thumb">
-      <div class="card-body">
-        <ul class="list-inline mb-2">
-          <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>02-14-2018</li>
-          <li class="list-inline-item"><a class="text-color" href="#">Humanities</a></li>
-        </ul>
-        <a href="course-single.html">
-          <h4 class="card-title">Art Design</h4>
-        </a>
-        <p class="card-text mb-4"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna.</p>
-        <a href="course-single.html" class="btn btn-primary btn-sm">Apply now</a>
-      </div>
-    </div>
-  </div>
-</div>
+  @endforeach
+  
 <!-- /course list -->
     <!-- mobile see all button -->
     <div class="row">
